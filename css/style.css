@@ -6,6 +6,7 @@ body {
     width: 30px;
     height: 300px;
     background-color: lightgray;
+    top:30px;
     position: relative;
   }
 
@@ -22,12 +23,18 @@ body {
     align-items: center;
     background-color: gray;
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     cursor: grab;
 }
 
-#scrollbar-arrow-up,
+#scrollbar-arrow-up {
+  width: 100%;
+  height: 30px;
+  background-color: darkgray;
+}
+
+
 #scrollbar-arrow-down {
   width: 100%;
   height: 30px;
