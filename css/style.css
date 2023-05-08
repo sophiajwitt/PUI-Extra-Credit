@@ -1,48 +1,66 @@
 body {
     background-color:lightsteelblue;
 }
-
 #scrollbar {
     width: 30px;
     height: 300px;
     background-color: lightgray;
-    top:30px;
     position: relative;
+    top: 100px;
   }
-
-#scrollbar-body {
+  
+  #scrollbar-arrow-up {
     width: 100%;
-    height: 100%;
-}
-
-#scrollbar-thumb {
-    width: 100%;
-    height: 25px;
+    height: 30px;
+    background-color: darkgray;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    position: relative;
+    top:-30px;
+  }
+
+  #scrollbar-arrow-down {
+    width: 100%;
+    height: 30px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: -30px;
+  }
+  
+  #scrollbar-arrow-up img,
+  #scrollbar-arrow-down img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  #scrollbar-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -30px;
+  }
+  
+  #scrollbar-thumb {
+    width: 100%;
+    height: 30px;
     background-color: gray;
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     cursor: grab;
-}
-
-#scrollbar-arrow-up {
-  width: 100%;
-  height: 30px;
-  background-color: darkgray;
-}
-
-
-#scrollbar-arrow-down {
-  width: 100%;
-  height: 30px;
-  background-color: darkgray;
-  position: absolute;
-}
-
-#scrollbar-position {
-  text-align: center;
-  font-size: 30px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #scrollbar-position {
+    text-align: center;
+    font-size: 3em;
+  }
+  
